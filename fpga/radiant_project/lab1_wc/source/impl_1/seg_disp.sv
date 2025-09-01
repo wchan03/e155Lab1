@@ -10,7 +10,6 @@ module seg_disp(input logic [3:0] s,
 	always_comb begin
 		// seg[0] is A
 		// seg[6] is G
-		//TODO: is the way im assigning things right?
 		case(s)
 			4'b0000: seg_intm <= 7'b0111111; //0
 			4'b0001: seg_intm <= 7'b0000110; //1
