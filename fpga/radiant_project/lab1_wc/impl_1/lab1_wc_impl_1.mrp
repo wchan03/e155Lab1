@@ -8,7 +8,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2024.2.0.3.0
-Mapped on: Mon Sep  1 11:40:34 2025
+Mapped on: Mon Sep  1 15:30:04 2025
 
 Design Information
 ------------------
@@ -21,20 +21,20 @@ Command line:   map -pdc C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_p
 Design Summary
 --------------
 
-   Number of slice registers:  11 out of  5280 (<1%)
+   Number of slice registers:  33 out of  5280 (1%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            23 out of  5280 (<1%)
-      Number of logic LUT4s:              11
-      Number of ripple logic:              6 (12 LUT4s)
-   Number of IO sites used:   15 out of 39 (38%)
-      Number of IO sites used for general PIO: 15
+   Number of LUT4s:            44 out of  5280 (1%)
+      Number of logic LUT4s:              10
+      Number of ripple logic:             17 (34 LUT4s)
+   Number of IO sites used:   14 out of 39 (36%)
+      Number of IO sites used for general PIO: 14
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 15 out of 36 (42%)
+      Number of IO sites used for PIO+I3C: 14 out of 36 (39%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 15 out of 39 (38%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 14 out of 39 (36%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  1 out of 1 (100%)
@@ -48,18 +48,18 @@ Design Summary
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  1
-      Net int_osc: 6 loads, 6 rising, 0 falling (Driver: Pin
+      Net int_osc: 17 loads, 17 rising, 0 falling (Driver: Pin
      hf_osc.osc_inst/CLKHF)
    Number of Clock Enables:  1
       Net VCC_net: 1 loads, 0 SLICEs
-   Number of LSRs:  1
-      Net n187: 6 loads, 6 SLICEs
+   Number of LSRs:  0
    Top 10 highest fanout non-clock nets:
+      Net VCC_net: 9 loads
       Net s_c_0: 8 loads
       Net s_c_1: 8 loads
       Net s_c_2: 8 loads
       Net s_c_3: 8 loads
-      Net n187: 6 loads
+      Net led_c_32: 2 loads
 
                                     Page 1
 
@@ -69,11 +69,10 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net VCC_net: 3 loads
-      Net led_c_10: 2 loads
-      Net n216: 2 loads
-      Net n218: 2 loads
-      Net n220: 2 loads
+      Net n255: 2 loads
+      Net n257: 2 loads
+      Net n259: 2 loads
+      Net n261: 2 loads
 
 
 
@@ -94,8 +93,6 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| reset               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | s[0]                | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -126,7 +123,10 @@ IO (PIO) Attributes
 | led[2]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
+Removed logic
+-------------
 
+Block i1 was optimized away.
 
                                     Page 2
 
@@ -134,10 +134,6 @@ IO (PIO) Attributes
 
 
 
-Removed logic
--------------
-
-Block i1 was optimized away.
 
 OSC Summary
 -----------
@@ -158,7 +154,7 @@ Instance Name: hf_osc.osc_inst
 Constraint Summary
 ------------------
 
-   Total number of constraints: 15
+   Total number of constraints: 16
    Total number of constraints dropped: 0
 
 Run Time and Memory Usage
@@ -167,7 +163,11 @@ Run Time and Memory Usage
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 66 MB
-Checksum -- map: ba069d88a9c15c48e73db92d6d2a03646ab9a9f9
+Checksum -- map: 3aa37d529342b24c4f9ede39366cbba6d8605efa
+
+
+
+
 
 
 
