@@ -13,71 +13,48 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-vlib work
-vmap work work
-# Questa Lattice OEM Edition-64 vmap 2024.2 Lib Mapping Utility 2024.05 May 20 2024
-# vmap work work 
-# Modifying C:/lscc/radiant/2024.2/questasim/win64/../modelsim.ini
-# Loading project lab1
-# Compile of lab1_wc.sv was successful.
-vsim -gui work.lab1_wc
-# vsim -gui work.lab1_wc 
-# Start time: 19:40:15 on Aug 31,2025
+vsim -voptargs=+acc work.lab1_wc
+# vsim -voptargs="+acc" work.lab1_wc 
+# Start time: 10:10:51 on Sep 01,2025
 # ** Note: (vsim-3812) Design is being optimized...
-# ** Error: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(19): Module 'HSOSC' is not defined.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(20): Module 'HSOSC' is not defined.
 #  For instance 'hf_osc' at path 'lab1_wc'
 # Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
 # Error loading design
-# End time: 19:40:15 on Aug 31,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 5
-vsim -gui work.lab1_wc -L iCE40UP -voptargs=+acc
-# vsim -gui work.lab1_wc -L iCE40UP -voptargs="+acc" 
-# Start time: 19:40:45 on Aug 31,2025
-# ** Note: (vsim-3812) Design is being optimized...
+# End time: 10:10:52 on Sep 01,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim -voptargs=+acc work.lab1_wc -L iCE40UP
+# vsim -voptargs="+acc" work.lab1_wc -L iCE40UP 
+# Start time: 10:11:52 on Sep 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
 # Loading work.lab1_wc(fast)
 # Loading iCE40UP.HSOSC(fast)
 # Loading work.seg_disp(fast)
-# Loading work.led0_1(fast)
-force s 0000
-run 100
+# Loading work.leds(fast)
 add wave -position insertpoint  \
 sim:/lab1_wc/s
-add wave -position insertpoint  \
-sim:/lab1_wc/led
-add wave -position insertpoint  \
-sim:/lab1_wc/seg
-# Causality operation skipped due to absence of debug database file
-force s 0000
-run 100
-force s 0001
-run 100
-force s 0010
-run 100
 force s 1000
 run 100
-force s 1111
-run 100
-force s 1111
-run 100
 add wave -position insertpoint  \
-sim:/lab1_wc/counter
-force s 0110
+sim:/lab1_wc/seg
+force s 1010
 run 100
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.lab1_wc(fast)
-# Loading iCE40UP.HSOSC(fast)
-# Loading work.seg_disp(fast)
-# Loading work.led0_1(fast)
-force s 1111
-run 100
-# Compile of lab1_wc.sv was successful.
+# Modified C:/lscc/radiant/2024.2/questasim/win64/../modelsim.ini
+vlog -reportprogress 300 -work work C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 10:25:21 on Sep 01,2025
+# vlog -reportprogress 300 -work work C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv 
+# -- Compiling module lab1_wc
+# 
+# Top level modules:
+# 	lab1_wc
+# End time: 10:25:21 on Sep 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
@@ -87,15 +64,21 @@ restart -f
 # Loading work.lab1_wc(fast)
 # Loading iCE40UP.HSOSC(fast)
 # Loading work.seg_disp(fast)
-# Loading work.led0_1(fast)
-force s 1001
+force s 1010
 run 100
-# Compile of lab1_wc.sv was successful.
-force s 0101
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_wc(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.seg_disp(fast)
+force s 1111
 run 100
-force s 1101
+force s 4'b1111
 run 100
-# Compile of lab1_wc.sv failed with 1 errors.
-# Compile of lab1_wc.sv was successful.
-# End time: 22:30:27 on Aug 31,2025, Elapsed time: 2:49:42
-# Errors: 0, Warnings: 5
+add wave -position insertpoint  \
+sim:/lab1_wc/led
+run 100
+# End time: 11:55:25 on Sep 01,2025, Elapsed time: 1:43:33
+# Errors: 0, Warnings: 1

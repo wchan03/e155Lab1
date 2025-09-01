@@ -9,11 +9,9 @@ module lab1_wc( // input logic clk, //TODO: how are we having the clock work? IN
 			output logic [2:0] led, 
 			output logic [6:0] seg);
 		
-	logic int_osc;
-	logic [24:0] counter;
-	//counter <= 0;
+	logic int_osc; // Internal clock
+	logic [10:0] counter;
   
-	//TODO: oscillate LED at 2.4Hz
 	// START CODE FROM TUTORIAL
 	// Internal high-speed oscillator
 	HSOSC #(.CLKHF_DIV(2'b01)) 
@@ -23,18 +21,17 @@ module lab1_wc( // input logic clk, //TODO: how are we having the clock work? IN
 	// Counter
 	always_ff @(posedge int_osc) begin
 		if(reset == 0)  counter <= 0;
-		else		counter <= counter + 1;
+		else		counter <= counter + 1; //TODO: Warning here
 	end
   
 	// Assign LED output
-	assign led[2] = counter[24]; //TODO: this is blinking at ~1Hz. NOT 2.4
+	assign led[0] = s[1] ^ s[0];
+	assign led[1] = s[3] & s[2]; //TODO: Does order matter?
+	assign led[2] = counter[10]; //TODO: is blinking rate correct?
 			
 	// END CODE FROM TUTORIAL 
 	
-	seg_disp sd(int_osc, s, seg);
-	
-	assign led[0] = s[1] ^ s[0];
-	assign led[1] = s[3] & s[2]; //TODO: Does order matter?
+	seg_disp sd(s, seg);
 	
 endmodule 
 
