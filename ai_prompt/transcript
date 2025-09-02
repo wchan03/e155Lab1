@@ -1,0 +1,379 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Load canceled
+# Loading project lab1_wc
+# Compile of lab1_wc.sv was successful.
+# Compile of lab1_testbench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.lab1_testbench -L iCE40UP
+# vsim -gui work.lab1_testbench -L iCE40UP 
+# Start time: 11:10:44 on Sep 02,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(15): Module 'seg_disp' is not defined.
+#  For instance 'sd' at path 'lab1_testbench.dut'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 11:10:45 on Sep 02,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 6
+vsim -gui work.lab1_testbench -L iCE40UP
+# vsim -gui work.lab1_testbench -L iCE40UP 
+# Start time: 11:11:15 on Sep 02,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(15): Module 'seg_disp' is not defined.
+#  For instance 'sd' at path 'lab1_testbench.dut'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 11:11:16 on Sep 02,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of lab1_wc.sv was successful.
+# Compile of lab1_testbench.sv was successful.
+# Compile of seg_disp.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.lab1_testbench -L iCE40UP
+# vsim -gui work.lab1_testbench -L iCE40UP 
+# Start time: 11:11:28 on Sep 02,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.lab1_testbench(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 500
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.lab1_testbench(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 1000
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.lab1_testbench(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.lab1_testbench(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.lab1_testbench(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.lab1_testbench(fast)
+# Loading iCE40UP.HSOSC(fast)
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+# Compile of lab1_wc.sv was successful.
+# Compile of lab1_testbench.sv was successful.
+# Compile of seg_disp.sv was successful.
+# 3 compiles, 0 failed with no errors.
+quit -sim
+# End time: 11:16:00 on Sep 02,2025, Elapsed time: 0:04:32
+# Errors: 0, Warnings: 3
+vsim -gui -L iCE40UP work.lab1_testbench work.lab1_wc -voptargs=+acc
+# vsim -gui -L iCE40UP work.lab1_testbench work.lab1_wc -voptargs="+acc" 
+# Start time: 11:16:17 on Sep 02,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+run 200
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+run 100
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+# Compile of lab1_wc.sv was successful.
+# Compile of lab1_testbench.sv was successful.
+# Compile of seg_disp.sv was successful.
+# 3 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "C:UserswchanDocumentsGitHube155Lab1pgaradiant_projectlab1_wclab1_testvectors.tv.txt" in read mode.
+# Invalid argument. (errno = EINVAL)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+# Compile of lab1_testbench.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+force s 4'b000
+run 100
+add wave -position insertpoint  \
+sim:/lab1_testbench/s \
+sim:/lab1_testbench/led \
+sim:/lab1_testbench/seg
+force s 4'b000
+run 100
+force s 4'b1111
+run 100
+force s 4'1010
+# Invalid radix for based number: 1.
+# ** UI-Msg (Error): (vsim-4011) Invalid force value: 4'1010.
+# 
+force s 4'b1010
+run 100
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+force s 0000
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+force s 4'b000
+run 100
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+vsim -gui -L iCE40UP work.lab1_wc -voptargs=+acc
+# End time: 11:57:10 on Sep 02,2025, Elapsed time: 0:40:53
+# Errors: 0, Warnings: 4
+# vsim -gui -L iCE40UP work.lab1_wc -voptargs="+acc" 
+# Start time: 11:57:10 on Sep 02,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab1_wc(fast)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+add wave -position end  sim:/lab1_wc/s
+add wave -position end  sim:/lab1_wc/led
+add wave -position end  sim:/lab1_wc/seg
+force s 4'b000
+run 100
+# Causality operation skipped due to absence of debug database file
+force s 4'b0001
+run 100
+force s 4'b0002
+# Invalid binary digit: 2.
+# ** UI-Msg (Error): (vsim-4011) Invalid force value: 4'b0002.
+# 
+force s 4'b0010
+run 100
+force s 4'b0011
+run 100
+force s 4'b0100
+run 100
+force s 4'b0000
+run 100
+# End time: 12:03:50 on Sep 02,2025, Elapsed time: 0:06:40
+# Errors: 0, Warnings: 2

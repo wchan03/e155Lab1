@@ -1,0 +1,7 @@
+rch path is now "C:/Users/wchan/Documents/GitHub/e155Lab1/ai_prompt/impl_1". VHDL-1504
+Top module language type = Verilog.
+Top module name (Verilog, mixed language): led_blink_2hz
+INFO <35901018> - c:/users/wchan/documents/github/e155lab1/ai_prompt/source/impl_1/ai_prompt.sv(1): compiling module led_blink_2hz. VERI-1018
+ERROR <35901063> - c:/users/wchan/documents/github/e155lab1/ai_prompt/source/impl_1/ai_prompt.sv(15): instantiating unknown module OSCH. VERI-1063
+
+child process exited abnormally

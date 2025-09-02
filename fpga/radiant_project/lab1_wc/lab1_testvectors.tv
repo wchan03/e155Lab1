@@ -1,5 +1,3 @@
-// lab 1 test vectors 
-// s0 s1 s2 s3 _ led0 led1 led2 _ seg0 seg1 seg2 seg3 seg4 seg5 seg6 
 0000_00x_0111111
 0001_00x_0000110
 0010_00x_1011011
