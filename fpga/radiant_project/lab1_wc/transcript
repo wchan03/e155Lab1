@@ -13,9 +13,20 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
+vsim work.lab1_wc
+# vsim work.lab1_wc 
+# Start time: 07:33:43 on Sep 02,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(20): Module 'HSOSC' is not defined.
+#  For instance 'hf_osc' at path 'lab1_wc'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 07:33:43 on Sep 02,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
 vsim -voptargs=+acc work.lab1_wc
 # vsim -voptargs="+acc" work.lab1_wc 
-# Start time: 10:10:51 on Sep 01,2025
+# Start time: 07:33:59 on Sep 02,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Error: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(20): Module 'HSOSC' is not defined.
@@ -23,62 +34,244 @@ vsim -voptargs=+acc work.lab1_wc
 # Optimization failed
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
 # Error loading design
-# End time: 10:10:52 on Sep 01,2025, Elapsed time: 0:00:01
+# End time: 07:33:59 on Sep 02,2025, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 1
-vsim -voptargs=+acc work.lab1_wc -L iCE40UP
-# vsim -voptargs="+acc" work.lab1_wc -L iCE40UP 
-# Start time: 10:11:52 on Sep 01,2025
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+vmap work C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/work
+# Questa Lattice OEM Edition-64 vmap 2024.2 Lib Mapping Utility 2024.05 May 20 2024
+# vmap work C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/work 
+# Modifying C:/lscc/radiant/2024.2/questasim/win64/../modelsim.ini
+vmap -del work
+# Questa Lattice OEM Edition-64 vmap 2024.2 Lib Mapping Utility 2024.05 May 20 2024
+# vmap -del work 
+# Removing reference to logical library work
+# Modifying C:/lscc/radiant/2024.2/questasim/win64/../modelsim.ini
+vmap work C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/work
+# Questa Lattice OEM Edition-64 vmap 2024.2 Lib Mapping Utility 2024.05 May 20 2024
+# vmap work C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/work 
+# Modifying C:/lscc/radiant/2024.2/questasim/win64/../modelsim.ini
+vsim work._opt
+# vsim work._opt 
+# Start time: 07:34:10 on Sep 02,2025
+# ** Warning: (vsim-1963) Explicit invocation on automatically named optimized design "_opt" will not cause it to be locked.
 # Loading sv_std.std
 # Loading work.lab1_wc(fast)
 # Loading iCE40UP.HSOSC(fast)
 # Loading work.seg_disp(fast)
-# Loading work.leds(fast)
-add wave -position insertpoint  \
-sim:/lab1_wc/s
-force s 1000
-run 100
-add wave -position insertpoint  \
-sim:/lab1_wc/seg
-force s 1010
-run 100
-# Modified C:/lscc/radiant/2024.2/questasim/win64/../modelsim.ini
-vlog -reportprogress 300 -work work C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv
-# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 10:25:21 on Sep 01,2025
-# vlog -reportprogress 300 -work work C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv 
-# -- Compiling module lab1_wc
-# 
-# Top level modules:
-# 	lab1_wc
-# End time: 10:25:21 on Sep 01,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.lab1_wc(fast)
-# Loading iCE40UP.HSOSC(fast)
-# Loading work.seg_disp(fast)
-force s 1010
-run 100
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.lab1_wc(fast)
-# Loading iCE40UP.HSOSC(fast)
-# Loading work.seg_disp(fast)
-force s 1111
-run 100
-force s 4'b1111
-run 100
-add wave -position insertpoint  \
-sim:/lab1_wc/led
-run 100
-# End time: 11:55:25 on Sep 01,2025, Elapsed time: 1:43:33
+quit -sim
+# End time: 07:35:09 on Sep 02,2025, Elapsed time: 0:00:59
 # Errors: 0, Warnings: 1
+vmap -del work
+# Questa Lattice OEM Edition-64 vmap 2024.2 Lib Mapping Utility 2024.05 May 20 2024
+# vmap -del work 
+# Removing reference to logical library work
+# Modifying C:/lscc/radiant/2024.2/questasim/win64/../modelsim.ini
+# Loading project lab1
+# Compile of lab1_testbench.sv failed with 5 errors.
+# Compile of lab1_wc.sv was successful.
+# 2 compiles, 1 failed with 5 errors.
+# Compile of lab1_wc.sv was successful.
+# Compile of lab1_testbench.sv failed with 3 errors.
+# Compile of lab1_wc.sv was successful.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of lab1_testbench.sv was successful.
+# Compile of lab1_wc.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.lab1_testbench -voptargs=+acc -L iCE40UP
+# vsim work.lab1_testbench -voptargs="+acc" -L iCE40UP 
+# Start time: 07:42:27 on Sep 02,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sd'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'clk'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(48).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 's'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(49).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3722) C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(15): [TFMPC] - Missing connection for port 'seg'.
+# ** Error (suppressible): (vsim-3839) Variable '/lab1_testbench/led', driven via a port connection, is multiply driven. See C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(19).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv Line: 37
+# Error loading design
+# End time: 07:42:51 on Sep 02,2025, Elapsed time: 0:00:24
+# Errors: 1, Warnings: 13
+# Compile of lab1_testbench.sv was successful.
+# Compile of lab1_wc.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc -L iCE40UP work.lab1_testbench work.lab1_wc
+# vsim -voptargs="+acc" -L iCE40UP work.lab1_testbench work.lab1_wc 
+# Start time: 07:46:44 on Sep 02,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sd'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'clk'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(48).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 's'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(49).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3722) C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(15): [TFMPC] - Missing connection for port 'seg'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sd'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'clk'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(48).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 's'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(49).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3722) C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(15): [TFMPC] - Missing connection for port 'seg'.
+add wave -position end  sim:/lab1_testbench/s
+add wave -position end  sim:/lab1_testbench/led
+add wave -position end  sim:/lab1_testbench/seg
+add wave -position end  sim:/lab1_testbench/expected
+run 1000
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+run 1000
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sd'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'clk'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(48).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 's'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(49).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3722) C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(15): [TFMPC] - Missing connection for port 'seg'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sd'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'clk'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(48).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 's'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(49).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3722) C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(15): [TFMPC] - Missing connection for port 'seg'.
+run 1000
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sd'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'clk'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(48).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 's'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(49).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3722) C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(15): [TFMPC] - Missing connection for port 'seg'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sd'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'clk'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(48).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 's'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(49).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3722) C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(15): [TFMPC] - Missing connection for port 'seg'.
+run 1000
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sd'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'clk'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(48).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 's'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(49).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3722) C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(15): [TFMPC] - Missing connection for port 'seg'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sd'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'clk'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(48).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 's'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(49).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3722) C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(15): [TFMPC] - Missing connection for port 'seg'.
+run 1000
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sd'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'clk'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(48).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 's'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(49).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3722) C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(15): [TFMPC] - Missing connection for port 'seg'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sd'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'clk'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(48).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 's'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(49).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3722) C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(15): [TFMPC] - Missing connection for port 'seg'.
+run 1000
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_wc(fast__1)
+# Loading work.seg_disp(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.lab1_wc(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sd'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'clk'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(48).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 's'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(49).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench/dut/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3722) C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(15): [TFMPC] - Missing connection for port 'seg'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sd'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'clk'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(48).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 's'. The port definition is at: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(49).
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_wc/sd File: C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv Line: 15
+# ** Warning: (vsim-3722) C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv(15): [TFMPC] - Missing connection for port 'seg'.
+run 1000
+# ** Warning: (vsim-7) Failed to open readmem file "lab1_testvectors.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+# A time value could not be extracted from the current line
+# End time: 08:01:10 on Sep 02,2025, Elapsed time: 0:14:26
+# Errors: 0, Warnings: 11

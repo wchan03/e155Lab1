@@ -1,14 +1,18 @@
 m255
 K4
 z2
-Z0 !s12c _opt
-Z1 !s99 nomlopt
+!s12c _opt2
+Z0 !s99 nomlopt
+!s12c _opt1
+R0
+Z1 !s12c _opt
 R0
 R1
 R0
 R1
 R0
 R1
+R0
 !s11f vlog 2024.2 2024.05, May 20 2024
 13
 !s112 1.1
@@ -20,45 +24,101 @@ Z2 dC:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc
 T_opt
 !s110 1756747529
 V^d;hbA3d:HPG;J@B6:1b^2
-04 7 4 work lab1_wc fast 0
+Z3 04 7 4 work lab1_wc fast 0
 =2-00be43eaec8a-68b5d709-2e0-1f78
-R1
+R0
 !s12f OEM25U2 
-!s12b OEM100
-!s124 OEM100
-!s135 nogc
-o-quiet -auto_acc_if_foreign -work work -L iCE40UP +acc
-Z3 tCvgOpt 0
+Z4 !s12b OEM100
+Z5 !s124 OEM100
+Z6 !s135 nogc
+Z7 o-quiet -auto_acc_if_foreign -work work -L iCE40UP +acc
+Z8 tCvgOpt 0
 n@_opt
-OL;O;2024.2;79
-vlab1_wc
-Z4 2C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv
-Z5 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-!s110 1756747521
+Z9 OL;O;2024.2;79
+R2
+T_opt1
+!s110 1756824147
+V1_RlE[liI1VagcCoC7E>31
+Z10 04 14 4 work lab1_testbench fast 0
+=1-00be43eaeac0-68b70253-23d-7c98
+R0
+!s12f OEM25U3 
+R4
+R5
+R6
+R7
+R8
+n@_opt1
+R9
+R2
+T_opt2
+!s110 1756824405
+VVH>Ngi3hNCKnz6kC_8SOS3
+R10
+R3
+=1-00be43eaeac0-68b70354-3ab-7c70
+R0
+!s12f OEM25U5 
+R4
+R5
+R6
+R7
+R8
+n@_opt2
+R9
+vlab1_testbench
+2C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv
+Z11 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z12 !s110 1756824377
 !i10b 1
-!s100 3jfe5o[kG[>8dlhh<S3K<1
-IEcL=ModE2GoSVSZU1A?CR3
+!s100 f^^f?0gfgC;S?9X^mlM]B1
+IYbnWb;[hUhL4kL?b7P<6f1
 S1
 R2
-w1756745606
-Z6 8C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv
-Z7 FC:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv
-!i122 5
-L0 6 34
-Z8 VDg1SIo80bB@j0V0VzS_@n1
-Z9 OL;L;2024.2;79
+w1756824371
+8C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv
+FC:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv
+!i122 11
+L0 8 43
+Z13 VDg1SIo80bB@j0V0VzS_@n1
+Z14 OL;L;2024.2;79
 r1
 !s85 0
 31
-!s108 1756747521.000000
-Z10 !s107 C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv|
-!s90 -F=C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/vlog.opt|-F=|-reportprogress|300|-work|work|C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv|
+Z15 !s108 1756824377.000000
+!s107 C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_testbench.sv|
 !i113 0
-o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R3
+Z16 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+vlab1_wc
+Z17 2C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv
+R11
+R12
+!i10b 1
+!s100 [fodGz@3Hm;Igacll3<iV3
+I?PV3fQS6U0<ec^A9<GGb[1
+S1
+R2
+w1756822001
+Z18 8C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv
+Z19 FC:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv
+!i122 12
+L0 6 30
+R13
+R14
+r1
+!s85 0
+31
+R15
+Z20 !s107 C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv|
+Z21 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv|
+!i113 0
+R16
+R8
 vled0_1
-R4
-R5
+R17
+R11
 !s110 1756695766
 !i10b 1
 !s100 a_nT1Y:CO^PbNM^jY6^ao1
@@ -66,24 +126,24 @@ IlgDV`dF<XDFD_>TaIJ50d1
 S1
 R2
 w1756695751
-R6
-R7
+R18
+R19
 !i122 1
 L0 52 9
-R8
-R9
+R13
+R14
 r1
 !s85 0
 31
 !s108 1756695766.000000
-R10
-Z11 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/lab1_wc/source/impl_1/lab1_wc.sv|
+R20
+R21
 !i113 0
-Z12 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R3
+R16
+R8
 vleds
-R4
-R5
+R17
+R11
 !s110 1756697556
 !i10b 1
 !s100 nJSWh;7F3hck1RWfGhNBX1
@@ -91,24 +151,24 @@ IzQn1aiNo:k8[b=:EjA8Xz0
 S1
 R2
 w1756697553
-R6
-R7
+R18
+R19
 !i122 4
 L0 54 9
-R8
-R9
+R13
+R14
 r1
 !s85 0
 31
 !s108 1756697556.000000
-R10
-R11
+R20
+R21
 !i113 0
-R12
-R3
+R16
+R8
 vseg_disp
-R4
-R5
+R17
+R11
 !s110 1756694403
 !i10b 1
 !s100 Q2Yd:VcdA1Ma<aNzETeoR3
@@ -116,18 +176,18 @@ IKi<UlKbCB2G5AS^g8DNAn0
 S1
 R2
 w1756694186
-R6
-R7
+R18
+R19
 !i122 0
 L0 48 30
-R8
-R9
+R13
+R14
 r1
 !s85 0
 31
 !s108 1756694403.000000
-R10
-R11
+R20
+R21
 !i113 0
-R12
-R3
+R16
+R8
