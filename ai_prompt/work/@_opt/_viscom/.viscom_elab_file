@@ -1,0 +1,1 @@
+C:/lscc/radiant/2024.2/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 393216 work.lab1_testbench -quiet -auto_acc_if_foreign -work work -L iCE40UP -allow_unnamed -o _opt -id 1-00be43eaebb3-68b73350-2ab-4668 +__design_bin_path+C:/Users/wchan/Documents/GitHub/e155Lab1/ai_prompt

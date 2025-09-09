@@ -1,1 +1,10 @@
+C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/source/impl_1/lab1_wc.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/wchan/Documents/GitHub/e155Lab1/fpga/radiant_project/source/impl_1/lab1_wc.sv
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+-- Compiling module lab1_wc
+-- Compiling module seg_disp
+-- Compiling module led0_1
 
+Top level modules:
+	lab1_wc
+
+} {} {}}
